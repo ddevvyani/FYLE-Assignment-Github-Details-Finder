@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>GitHub Profile Search</h1>
+    <form id="search-form">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Enter GitHub username"
+        required
+      />
+      <button type="submit" id="search-button">Search</button>
+    </form>
+    <div id="profile"></div>
+    <div id="repos"></div>
+    <div id="loader">
+      <img src="loadergif.png" id="loader-image" alt="Loading..." />
+    </div>
+
+    <button onclick="toggleDarkMode()">
+      <img src="switchtoogle.png" alt="" width="30px" height="30px" />
+    </button>
+
+    <script src="script.js"> </script>
+  </body>
+</html>
